@@ -1,11 +1,9 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Confetti from 'react-confetti';
 import PhotoCard from '../components/PhotoCard';
 import { celebrities, girlfriendPhotos, winnerPhoto } from '../data/photos';
 
 function Game() {
-  const navigate = useNavigate();
   const [round, setRound] = useState(0);
   const [gameWon, setGameWon] = useState(false);
   const [currentGirlfriendPhoto, setCurrentGirlfriendPhoto] = useState(0);
